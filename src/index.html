@@ -7,7 +7,73 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <div class="contenedor">
+        <section class="tarjeta" id="tarjeta">
+          <div class="delantera">
+            <div class="logoMarca" id="logo-marca">
+              <img class="imagenLogo" src="imagenes/visa.png" alt="">
+            </div>
+            <img class="chipTarjeta" src="imagenes/chip.png" alt="">
+            <div class="datos">
+              <div class="grupo">
+                <p class="informacionTarjeta">Numero de Tarjeta</p>
+                <p class="tarjetaUsuario" id="numero">
+                  #####
+                </p>
+              </div>
+              <div class="flexbox">
+              <div class="grupo">
+                <p class="informacionTarjeta">Nombre de Tarjeta</p>
+                <p class="tarjetaUsuario" id="nombre">
+                  Daniela Ramirez
+                </p>
+              </div>
+              <div class="grupo" id="expiracion">
+                <p class="informacionTarjeta">
+                  Expiracion
+                </p>
+                <p class="tarjetaUsuario">
+                  <span class="mes">MM</span>/<span class="year">AA</span>
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="trasera">
+            <div class="barraMagnetica">
+            </div>
+              <div class="datos">
+                <div class="grupo firmaGrupo" id="firma">
+                  <p class="informacionTarjeta">
+                    Firma
+                  </p>
+                  <div class="firma">
+                    <p>
+                     Suga
+                    </p>
+                  </div>
+                </div>
+                <div class="grupo ccvGrupo" id="ccv">
+                  <p class="informacionTarjeta">
+                        CCV
+                  </p>
+                  <p class="ccv"></p>
+                </div>
+              </div>
+              <p class="leyenda">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <a href="#" class="linkBanco">www.tubanco.com</a>
+            </div>
+        </section>
+        <div class="contenedorCreditNumber">
+          <input class="creditInfo" type="number" name="" id="inputNumber" placeholder="Ingresa tu numero de tarjeta" min="16" max="16">
+          <input class="creditInfo" type="text" name="" id="inputName" placeholder="Ingresa nombre y apellido" min="16" max="16">
+          <button id="button">Enviar</button>
+        </div>
+      </div>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
