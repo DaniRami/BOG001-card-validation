@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9fa96555ef.js"></script>
+    
+    
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+
+      </section>
+      <section class="contenedorValidador">
+
+        <div class="tarjeta" id="tarjeta">
+          <div class="delantera">
+            <div class="logoMarca" id="logoMarca">
+            </div>
+            <img class="chipTarjeta" src="imagenes/chip.png" alt="">
+            <div class="datosDentroDeLaTarjeta">
+              <div class="grupo">
+                <p class="informacionTarjeta">Numero de Tarjeta</p>
+                <p class="informacionTarjetaUsuario" id="numero">
+                  #### #### #### ####
+                </p>
+              </div>
+              <div class="flexbox">
+                <div class="grupo">
+                <p class="informacionTarjeta">Nombre de Tarjeta</p>
+                <p class="informacionTarjetaUsuario" id="nombre">
+                  Nombre Apellido
+                </p>
+                </div>
+              <div class="grupo" id="expiracion">
+                <p class="informacionTarjeta">
+                  Expiracion
+                </p>
+                <p class="informacionTarjetaUsuario">
+                  <span class="mes">MM</span>/<span class="year">AA</span>
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="trasera">
+            <div class="barraMagnetica">
+            </div>
+              <div class="datosDentroDeLaTarjeta">
+                <div class="grupo contenedorBarraFirma" id="firma">
+                  <p class="informacionTarjeta">
+                    Firma
+                  </p>
+                  <div class="firma">
+                    <p>
+                    </p>
+                  </div>
+                </div>
+                <div class="grupo ccvContenedor" id="ccv">
+                  <p class="informacionTarjeta">
+                        CCV
+                  </p>
+                  <p class="ccv"></p>
+                </div>
+              </div>
+              <p class="leyenda">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <a href="#" class="linkBanco">www.tubanco.com</a>
+            </div>
+        </div>
+
+        <form class="formulario" id="formulario">
+          <div class="grupo">
+            <label for="inputNumber" class="informacionTarjeta">Numero Tarjeta</label>
+            <input class="formularioInformacion" type="number" name="" id="inputNumber" placeholder="Ingresa tu numero de tarjeta" maxlength="19">
+            </div>
+            <div class="grupo">
+            <label for="inputName" class="informacionTarjeta">Nombre</label>
+              <input class="formularioInformacion" type="text" name="" id="inputName" placeholder="Ingresa nombre y apellido" maxlength="19">
+            </div>
+            <div class="flexbox">
+              <div class="grupo expira">
+                <label for="selectMes" class="informacionTarjeta">Expiracion</label>
+                <div class="flexbox">
+                  <div class="grupoSelect">
+                        <select name="mes" id="selectMes" class="formularioInformacion">
+                          <option disabled selected>Mes</option>
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="grupoSelect">
+                    <select name="year" id="selectYear" class="formularioInformacion">
+                      <option disabled selected>Año</option>
+                    </select>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grupo cvv">
+                  <label class="informacionTarjeta" for="inputCVV">CVV</label>
+                  <input type="text" id="inputCVV" maxlength="3" class="inputCcv">
+            </div>
+            <button type="button" id="button" class="button">Enviar</button>
+        </form>
+      </section>
+         
+       
+    </main>
+    <footer></footer>
+    <script src="index.js" type="module"></script>
+     
+     
+  </body>
+</html>
