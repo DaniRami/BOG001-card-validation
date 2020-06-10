@@ -12,8 +12,7 @@ body {
     font-family: 'Anonymous Pro', monospace;
 }
 
-.contenedor {
-    background-color: gainsboro;
+.contenedorValidador {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -24,7 +23,6 @@ body {
 }
 
 .tarjeta {
-    backface-visibility: hidden;
 	max-width: 100%;
 	width: 550px;
 	position: relative;
@@ -35,7 +33,7 @@ body {
 	cursor: pointer;
 	z-index: 2;
 }
-.tarjeta:active {
+.tarjeta.active {
     transform: rotateY(180deg);
 }
 
@@ -49,6 +47,7 @@ body {
     justify-content: space-between;
     min-height: 315px;
     padding: 30px;
+    width: 100%;
 }
 
 /* busca la clase tarjeta y dentro de ella el div con la clase delantera */
@@ -64,7 +63,7 @@ body {
     min-height: 50px;
 }
 
-.imagenLogo {
+.logoMarca img{
     height: 100%;
     /* PARA RECORTAR LA IMAGEN DE FORMA QUE NO SE VEA FEA */
     object-fit: cover;
@@ -80,25 +79,21 @@ body {
 
 .informacionTarjeta {
     color: #7d8994;
+    display: block;
     font-size: 16px;
     margin-bottom: 5px;
 }
 
-.tarjetaUsuario{
+.informaciontTarjetaUsuario{
     color: #fff;
     font-size: 22px;
     text-transform: uppercase;
-    margin-top: 20px;
 }
 
 .flexbox {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-}
-
-.creditInfo {
-    width: 200px;
 }
 
 .trasera {
@@ -119,13 +114,11 @@ body {
     width: 100%;
 }
 
-.trasera .datos {
+.datosDentroDeLaTarjeta {
     margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
 }
 
-.firmaGrupo {
+.contenedorBarraFirma {
     width: 70%;
 }
 
@@ -140,14 +133,12 @@ body {
     text-transform: capitalize;
 }
 
-.ccvGrupo {
+.ccvContenedor {
     width: 20%;
 }
 
 .ccv {
     background-color: white;
-    color: black;
-    height: 40px;
     padding: 10px;
     text-align: center;
 }
@@ -162,3 +153,98 @@ body {
     color: white;
     font-size: 14px;
 }
+
+
+ 
+
+ /*formulario tarjeta*/
+
+ .formulario {
+    background-color: white;
+    border-radius: 10px;
+    padding: 100px 40px 40px;  
+    max-width: 100%; 
+    position: relative;
+    top: -80px;
+    width: 700px;
+   }
+   
+   .formularioInformacion {
+       border: 2px solid #ced6e0;
+       font-size: 18px;
+       height: 50px;
+       padding: 5px 12px;
+       transition: .3s ease all;
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   
+   .formularioInformacion:hover,
+   .formularioInformacion:hover,
+   .inputCcv:hover    {
+       border: 2px solid #93BDED;
+   }
+   
+   .formularioInformacion:focus,
+   .formularioInformacion:focus,
+   .inputCcv:focus {
+      outline: rgb(4,4,4);
+      box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, .3);
+   }
+   
+   .expira {
+       width: 100%;
+   }
+   
+   .cvv {
+       min-width: 100px;
+   }
+   
+   .grupoSelect {
+       margin-right: 15px;
+       position: relative;
+       width: 100%;
+   }
+   
+   .grupoSelect:hover {
+       color: #93bfed; 
+   }
+   
+   .grupoSelect i {
+       position: absolute;
+       /* color: #CED6E0; */
+       top: 18px;
+       right: 10px;
+       transition: .3s ease all;
+       z-index: 3;
+   }
+   
+   select {
+       -webkit-appearance: none; 
+   }
+   
+   .grupoSelect i:hover {
+       color: #93bfed;
+   }
+   
+   
+   .inputCcv {
+       height: 40px;
+       margin: 10px 0;
+   }
+   
+   .button {
+       border: none;
+       padding: 10px;
+       font-size: 22px;
+       color: #fff;
+       background-color: #2364d2;
+       box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, .4);
+       cursor: pointer;
+       width: 100%;
+   }
+   
+   .button:hover {
+       background: #1850b1;
+   
+   }
