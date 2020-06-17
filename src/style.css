@@ -101,7 +101,7 @@ body {
 }
 
 .modeloPrincipal {
-    flex: 1 1 20%;
+    flex: 1 1 30%;
 }
 
 .imgModeloPrincipal {
@@ -164,11 +164,27 @@ body {
 .contenedorCompra{
     text-align: center;
     padding: 20px 0px;
+    
 }
 
 .modelo .flexbox {
     justify-content: center;
     margin: 10px 0px;
+}
+.conectar{
+    border: 1px solid #999999;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+
+}
+.regresar{
+    background: #999;
+    color:white;
+}
+.regresar:hover{
+    background:black;
 }
 
  

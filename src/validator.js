@@ -1,7 +1,8 @@
 const validator = {
-  isValid: (creditCardNumber) => { /* aqui esta el numero detarjeta a validar en el algoritmo de lunh*/
+  isValid: (creditCardNumber) => { 
+    debugger  
     
-    let arrayNumeros = creditCardNumber.split("").reverse();/** se hace el cambio de posiciones para que el arrayde numeros quede en orden inverso */
+    let arrayNumeros = creditCardNumber.split("").reverse(); 
     var acumulador = 0; /** esta variable nos sirve para ir acomulando el valor de todos nuestros calculos */
     var contArray = 1;  /**esta variable  contador nos sirve para saber en posicion del arreglo estamos */
     arrayNumeros.forEach(number => { /** se recorre cada una de las posiciones del arreglo de numeros */
@@ -46,4 +47,4 @@ const validator = {
   },
 };
 
-export default validator;
+export default validator; 

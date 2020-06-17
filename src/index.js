@@ -1,4 +1,5 @@
 import validator from "./validator.js";
+
 let tarjeta = document.getElementById("tarjeta"),
 formulario = document.getElementById("formulario"),
 logoMarca = document.getElementById("logoMarca")
