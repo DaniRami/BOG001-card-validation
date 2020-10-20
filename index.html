@@ -4,16 +4,23 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/9fa96555ef.js"></script>
-    
-    
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Noticia+Text&family=Roboto+Condensed&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header></header>
+    <!--menu de navegacuin-->
+    <header class="header">
+      <h2>YOUR OWN STYLE</h2>
+      <nav>
+        <ul class="flexbox">
+          <li>
+            <a href="principal.html" class="enlaces">Inicio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <section>
-
-      </section>
+      <!--contenido principal-->
+      <h1 class="tituloValidador">Metodo de Pago</h1>
       <section class="contenedorValidador">
 
         <div class="tarjeta" id="tarjeta">
@@ -46,6 +53,7 @@
               </div>
             </div>
           </div>
+          <!--parte trasera de la tarjeta-->
           <div class="trasera">
             <div class="barraMagnetica">
             </div>
@@ -72,7 +80,7 @@
               <a href="#" class="linkBanco">www.tubanco.com</a>
             </div>
         </div>
-
+        <!--formulario-->
         <form class="formulario" id="formulario">
           <div class="grupo">
             <label for="inputNumber" class="informacionTarjeta">Numero Tarjeta</label>
@@ -105,15 +113,30 @@
                   <label class="informacionTarjeta" for="inputCVV">CVV</label>
                   <input type="text" id="inputCVV" maxlength="3" class="inputCcv">
             </div>
+            <!--boton de formulario-->
             <button type="button" id="button" class="button">Enviar</button>
         </form>
       </section>
-         
-       
-    </main>
-    <footer></footer>
+      </main>
+      <!--ventana modal-->
+      <div id="myModal" class="modal">
+      <div class="modal-content">
+         <div class="modal-header flexbox">
+           <h2>Por favor</h2>
+          <span class="close">&times;</span>
+         </div>
+         <div class="modal-body">
+           <p>¡Debes ingresar un numero de Tarjeta de Credito Valida!</p>
+         </div>
+       </div>
+     </div>
+     <!--pie de pagina-->
+     <footer class="footer">
+      <p>&copy; You Own Style - 2020 | Todos los derechos reservados </p>
+      <span>Daniela Ramirez - Oriana Reina</span>
+    </footer>
+    
     <script src="index.js" type="module"></script>
-     
-     
+    <script src="https://kit.fontawesome.com/9fa96555ef.js"></script>
   </body>
 </html>

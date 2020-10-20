@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Noticia+Text&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>YOUR OWN STYLE</title>
+</head>
+<body>
+  <!--menu de navegacion-->
+  <header class="header">
+    <h2>YOUR OWN STYLE</h2>
+    <nav>
+      <ul class="flexbox">
+        <li>
+          <a class="enlaces" href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a class="enlaces" href="#nosotros">Nosotros</a>
+        </li>
+        <li>
+          <a class="enlaces" href="#productos">Productos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <!--contenido principal-->
+    <section class="hero">
+        <div class = "bienvenida">
+            <h1 class="titulo">BIENVENIDA A YOUR OWN STYLE</h1> 
+            <hr class="separacion">
+            <h2 class="bienvenidaSubtitulo">tienda online</h2>
+        </div>     
+    </section>
+    <section class="info-container" id="nosotros">
+      <h2 class="titulo">Acerca De Nosotros</h2>
+      <p>Nosotros somos una tienda 100% online,tenemos un objetivo primordial es trabajar para que tú  te identifiques con la prenda que elijas</p>
+      <p>Cada diseño son esclusivamente diseñados siempre pensando en las diferentes diversidades de gustos</p>
+      <p>Trabajamos cada diseño con pasión para asegurarnos de tenerte siempre con nosotros</p>
+ <div class="info-imagen">
+      <img src="imagenes/compra1.jpg" alt = ""> 
+  </div>
+  </section>
+    <h2 class="titulo">Nuestros Estilos</h2>
+    <section class="flexbox galeriaProductos" id="productos">
+      <article onclick="confirmacion(10)" class="modeloPrincipal">
+        <img class="imgModeloPrincipal" src="imagenes/chaqueta-clara.jpg" alt="">
+        <div class="flexbox">
+          <h2 class="precioModelo">$90.000</h2>
+          <h2 class="titleModelo">Chaqueta flores clara</h2>
+        </div>
+      </article>
+      <div class="flexboxWrap">
+        
+          <article onclick="confirmacion(1)" class="modelo">
+            <img class="imgModelo" src="imagenes/chaquetafondo1.jpg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$50.000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 1</h2>
+            </div>
+          </article>
+        
+        
+          <article onclick="confirmacion(2)" class="modelo">
+            <img  class="imgModelo" src="imagenes/chaquetafondo2.jpg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$55.000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 2</h2>
+            </div>
+          </article>
+        
+         
+          <article  onclick="confirmacion(3)"class="modelo">
+            <img class="imgModelo" src="imagenes/chaquetafondo3.jpg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$60.000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 3</h2>
+            </div>
+          </article>
+        
+         
+          <article onclick="confirmacion(4)" class="modelo">
+            <img class="imgModelo" src="imagenes/chaquetafondo4.jpg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$65.000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 4</h2>
+            </div>
+          </article>   
+          
+         
+          <article onclick="confirmacion(5)" class="modelo">
+            <img class="imgModelo" src="imagenes/chaquetafondo5.jpg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$70.000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 5</h2>
+            </div>
+          </article>    
+        
+         
+          <article onclick="confirmacion(6)" class="modelo">
+            <img class="imgModelo" src="imagenes/chaquetafondo6.jpg" alt="">
+            <div class="flexbox">
+              <h2 class="precioModelo">$75.000</h2>
+              <h2 class="titleModelo">Chaqueta Modelo 6</h2>
+            </div>
+          </article>  
+        </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; You Own Style - 2020 | Todos los derechos reservados </p>
+    <span>Daniela Ramirez - Oriana Reina</span>
+  </footer>
+  <script src="rutas.js" type=""></script>
+</body>
+</html>
